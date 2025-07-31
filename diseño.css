@@ -1,0 +1,450 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .cv-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        
+        /* Left Column */
+        .left-column {
+            padding: 40px 30px;
+            background: #fff;
+        }
+        
+        /* Right Column */
+        .right-column {
+            padding: 40px 30px;
+            background: #f8f9ff;
+        }
+        
+        /* Header */
+        .header {
+            grid-column: 1 / -1;
+            padding: 40px 30px 20px;
+            background: white;
+            border-bottom: 1px solid #e1e5e9;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .header-content {
+            flex: 1;
+        }
+        
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            border: 3px solid #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #3498db;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .profile-photo i {
+            font-size: 3rem;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            color: #3498db;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-item i {
+            color: #3498db;
+            width: 16px;
+        }
+        
+        .contact-item a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Section Titles */
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        /* Profile Section */
+        .profile-text {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #555;
+            text-align: justify;
+            margin-bottom: 1.5rem;
+        }
+        
+        .profile-text strong {
+            color: #2c3e50;
+        }
+        
+        /* Experience */
+        .experience-item {
+            margin-bottom: 2rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+        
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 8px;
+            height: 8px;
+            background: #3498db;
+            border-radius: 50%;
+        }
+        
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.2rem;
+        }
+        
+        .company {
+            font-size: 1rem;
+            color: #3498db;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+        
+        .company a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .company a:hover {
+            text-decoration: underline;
+        }
+        
+        .date-location {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .date-location i {
+            color: #3498db;
+            width: 12px;
+        }
+        
+        .job-description {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .job-description ul {
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        
+        .job-description li {
+            margin-bottom: 0.3rem;
+        }
+        
+        /* Projects */
+        .project-item {
+            margin-bottom: 1.8rem;
+        }
+        
+        .project-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+        }
+        
+        .project-status {
+            font-size: 0.85rem;
+            color: #3498db;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-date {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .project-description {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+        
+        .project-description ul {
+            padding-left: 1rem;
+            margin-top: 0.3rem;
+        }
+        
+        .project-description li {
+            margin-bottom: 0.2rem;
+        }
+        
+        /* Education */
+        .education-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .degree {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.2rem;
+        }
+        
+        .school {
+            color: #3498db;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+        
+        .school a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        /* Achievements/Logros */
+        .achievement-item {
+            margin-bottom: 1.2rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .achievement-item::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        
+        .achievement-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+        }
+        
+        .achievement-description {
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-item {
+            background: white;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #2c3e50;
+            text-align: center;
+            border: 1px solid #e1e5e9;
+        }
+        
+        .skill-item.advanced {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+        
+        .skill-item.intermediate {
+            background: #e8f4fd;
+            color: #3498db;
+            border-color: #3498db;
+        }
+        
+        /* Certifications */
+        .cert-item {
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .cert-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.2rem;
+        }
+        
+        .cert-details {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        /* Interests */
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        .interest-item {
+            text-align: center;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e1e5e9;
+        }
+        
+        .interest-item i {
+            font-size: 1.5rem;
+            color: #3498db;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .interest-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .interest-description {
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 0.2rem;
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .cv-container {
+                margin: 0;
+                box-shadow: none;
+                max-width: none;
+                width: 100%;
+            }
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+                margin: 10px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+            
+            .profile-photo {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .profile-photo i {
+                font-size: 2.5rem;
+            }
+            
+            .left-column, .right-column {
+                padding: 20px 15px;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+        }
