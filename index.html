@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Botón de descarga PDF -->
+    <button id="downloadPDF" class="pdf-button" onclick="generatePDF()">
+        <i class="fas fa-file-pdf"></i> Descargar PDF
+    </button>
+
     <div class="cv-container">
         <!-- Header -->
         <div class="header">
@@ -50,7 +55,7 @@
             <section>
                 <h2 class="section-title">Perfil Profesional</h2>
                 <p class="profile-text">
-                    Estudiante avanzado de Ingeniería en Software con <strong>3+ años de experiencia práctica</strong> en desarrollo de sistemas empresariales y automatización. Especializado en <strong>GeneXus .NET</strong>, <strong>Python</strong>, y <strong>desarrollo móvil con Flutter</strong>. Durante mis pasantías en <strong>Expoflores</strong> colaboré en la implementación de soluciones que mejoraron la eficiencia operacional, incluyendo integración de APIs de pago y análisis de datos con Power BI. Me destaco por mi capacidad de resolución de problemas complejos, adaptabilidad tecnológica y trabajo efectivo en equipo multidisciplinario.
+                    Desarrollador Junior con <strong>3+ años de experiencia práctica</strong> en desarrollo de software y sistemas empresariales. Con sólida base en <strong>JavaScript, Python y fundamentos de Java</strong>, actualmente expandiendo conocimientos en <strong>Angular y TypeScript</strong> para desarrollo frontend moderno. Durante mis pasantías en <strong>Expoflores</strong> contribuí en sistemas .NET, integración de APIs críticas (PayPhone, Face ID, Contífico) y automatización de procesos. Me caracterizo por mi <strong>rápida curva de aprendizaje</strong>, adaptabilidad tecnológica y capacidad para trabajar efectivamente en equipos ágiles. Apasionado por las tecnologías Cloud (certificado AZ-500) y el desarrollo de soluciones escalables.
                 </p>
             </section>
             
@@ -67,11 +72,11 @@
                     </div>
                     <div class="job-description">
                         <ul>
-                            <li>Colaboré en el desarrollo de sistemas empresariales con <strong>GeneXus 17</strong> (.NET) y bases de datos distribuidas.</li>
-                            <li>Participé en la integración de APIs críticas: <strong>PayPhone</strong> (pagos), <strong>Face ID</strong> (autenticación), <strong>Contífico</strong> (facturación).</li>
-                            <li>Contribuí en la automatización de procesos con Python y PowerShell, optimizando tiempo de ejecución.</li>
-                            <li>Apoyé en el análisis de datos y creación de <strong>dashboards</strong> interactivos con Power BI.</li>
-                            <li>Asistí en la administración de bases de datos: Creación de <strong>Linked Servers</strong> y vistas distribuidas.</li>
+                            <li>Desarrollo de sistemas empresariales con <strong>GeneXus 17</strong> (.NET), <strong>JavaScript</strong> y bases de datos <strong>SQL Server</strong>.</li>
+                            <li>Integración de APIs REST: <strong>PayPhone</strong> (pagos), <strong>Face ID</strong> (autenticación), <strong>Contífico</strong> (facturación).</li>
+                            <li>Automatización de procesos con <strong>Python</strong> y PowerShell, mejorando eficiencia operacional.</li>
+                            <li>Creación de dashboards interactivos con <strong>Power BI</strong> para análisis de datos empresariales.</li>
+                            <li>Administración de bases de datos: Linked Servers, vistas distribuidas y optimización de queries.</li>
                         </ul>
                     </div>
                 </div>
@@ -166,22 +171,54 @@
                 </div>
             </section>
             
-            <!-- Habilidades -->
+            <!-- Stack Técnico -->
             <section>
-                <h2 class="section-title">Habilidades</h2>
+                <h2 class="section-title">Stack Técnico</h2>
+
+                <div class="tech-category">
+                    <h3 class="tech-subtitle">Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item intermediate">HTML5</div>
+                        <div class="skill-item intermediate">CSS3</div>
+                        <div class="skill-item advanced">JavaScript</div>
+                        <div class="skill-item learning">Angular</div>
+                        <div class="skill-item learning">TypeScript</div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 class="tech-subtitle">Backend & Cloud</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item intermediate">Java</div>
+                        <div class="skill-item learning">Spring Boot</div>
+                        <div class="skill-item advanced">Python</div>
+                        <div class="skill-item advanced">.NET/GeneXus</div>
+                        <div class="skill-item intermediate">Azure Cloud</div>
+                        <div class="skill-item intermediate">Microservicios</div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 class="tech-subtitle">Herramientas & Metodologías</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item advanced">Git</div>
+                        <div class="skill-item advanced">SCRUM/Agile</div>
+                        <div class="skill-item intermediate">Docker</div>
+                        <div class="skill-item intermediate">CI/CD</div>
+                        <div class="skill-item advanced">SQL Server</div>
+                        <div class="skill-item intermediate">Power BI</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Soft Skills -->
+            <section>
+                <h2 class="section-title">Competencias</h2>
                 <div class="skills-grid">
-                    <div class="skill-item advanced">SCRUM</div>
-                    <div class="skill-item advanced">TDD</div>
-                    <div class="skill-item intermediate">CI/CD</div>
-                    <div class="skill-item intermediate">DOCKER</div>
-                    <div class="skill-item intermediate">FIGMA</div>
-                    <div class="skill-item advanced">EXCEL AVANZADO</div>
-                    <div class="skill-item intermediate">Flutter/Dart</div>
-                    <div class="skill-item advanced">Análisis de datos</div>
-                    <div class="skill-item advanced">Comunicación efectiva</div>
-                    <div class="skill-item advanced">Gestión del tiempo</div>
-                    <div class="skill-item intermediate">Accesibilidad Web</div>
-                    <div class="skill-item advanced">Aprendizaje continuo</div>
+                    <div class="skill-item advanced">Aprendizaje rápido</div>
+                    <div class="skill-item advanced">Resolución de problemas</div>
+                    <div class="skill-item advanced">Trabajo en equipo</div>
+                    <div class="skill-item advanced">Adaptabilidad</div>
                 </div>
             </section>
             
@@ -257,5 +294,9 @@
             </section>
         </div>
     </div>
+
+    <!-- Scripts para generación de PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

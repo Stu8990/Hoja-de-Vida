@@ -342,6 +342,26 @@
             color: #3498db;
             border-color: #3498db;
         }
+
+        .skill-item.learning {
+            background: #fff9e6;
+            color: #f39c12;
+            border: 2px dashed #f39c12;
+        }
+
+        /* Tech Categories */
+        .tech-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-subtitle {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #3498db;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
         
         /* Certifications */
         .cert-item {
@@ -398,8 +418,46 @@
             margin-top: 0.2rem;
         }
         
+        /* Botón PDF */
+        .pdf-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .pdf-button:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(231, 76, 60, 0.4);
+        }
+
+        .pdf-button:active {
+            transform: translateY(0);
+        }
+
+        .pdf-button i {
+            font-size: 1.2rem;
+        }
+
         /* Print Styles */
         @media print {
+            .pdf-button {
+                display: none;
+            }
             body {
                 background: white;
             }
