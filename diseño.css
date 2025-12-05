@@ -429,15 +429,99 @@
             .pdf-button {
                 display: none;
             }
+
             body {
                 background: white;
+                margin: 0;
+                padding: 0;
             }
-            
+
             .cv-container {
                 margin: 0;
+                padding: 0;
                 box-shadow: none;
                 max-width: none;
                 width: 100%;
+                min-height: auto;
+            }
+
+            .header {
+                padding: 10px 20px 8px;
+                page-break-after: avoid;
+            }
+
+            .name {
+                font-size: 1.4rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .contact-info {
+                font-size: 0.7rem;
+            }
+
+            .main-content {
+                padding: 10px 20px;
+            }
+
+            .section-title {
+                font-size: 0.85rem;
+                margin-top: 0.8rem;
+                margin-bottom: 0.5rem;
+                padding-bottom: 0.3rem;
+            }
+
+            section:first-child .section-title {
+                margin-top: 0;
+            }
+
+            .education-item,
+            .experience-item {
+                margin-bottom: 0.8rem;
+            }
+
+            .degree,
+            .job-title,
+            .company,
+            .school {
+                font-size: 0.75rem;
+                margin-bottom: 0.1rem;
+            }
+
+            .date-location {
+                font-size: 0.7rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .education-description,
+            .job-description {
+                font-size: 0.7rem;
+                line-height: 1.4;
+            }
+
+            .skills-subtitle {
+                font-size: 0.75rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .skills-list {
+                margin-bottom: 0.5rem;
+            }
+
+            .skills-list li {
+                font-size: 0.7rem;
+                line-height: 1.4;
+                padding-left: 1rem;
+            }
+
+            .profile-text {
+                font-size: 0.7rem;
+                line-height: 1.4;
+                margin-bottom: 0.5rem;
+            }
+
+            section {
+                page-break-inside: avoid;
             }
         }
         
