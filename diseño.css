@@ -424,9 +424,46 @@
             font-size: 1.2rem;
         }
 
+        /* Botón de idioma */
+        .language-button {
+            position: fixed;
+            top: 20px;
+            right: 180px;
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        .language-button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(52, 152, 219, 0.4);
+        }
+
+        .language-button:active {
+            transform: translateY(0);
+        }
+
+        .language-button i {
+            font-size: 1.2rem;
+        }
+
         /* Print Styles */
         @media print {
-            .pdf-button {
+            .pdf-button,
+            .language-button {
                 display: none;
             }
 
@@ -559,5 +596,19 @@
             .skills-list li {
                 font-size: 0.8rem;
                 text-align: left;
+            }
+
+            .pdf-button {
+                top: 10px;
+                right: 10px;
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+
+            .language-button {
+                top: 60px;
+                right: 10px;
+                padding: 8px 16px;
+                font-size: 0.85rem;
             }
         }
